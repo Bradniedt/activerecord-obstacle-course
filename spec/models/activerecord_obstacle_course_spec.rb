@@ -333,8 +333,7 @@ describe 'ActiveRecord Obstacle Course' do
     # ------------------------------------------------------------
 
     # ------------------ Using ActiveRecord ----------------------
-    order = Order.last
-    names = order.items.all.pluck(:name)
+    names = Order.last.items.all.pluck(:name)
     # ------------------------------------------------------------
 
     # Expectation
